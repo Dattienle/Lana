@@ -1,6 +1,11 @@
 @import 'component/component1.scss';
 @import 'component/component2.scss';
-
+@import 'component/home.scss';
+@import 'component/oursolutions.scss';
+@import 'component/ourmission.scss';
+@import 'component/ourwork.scss';
+@import 'component/contact.scss';
+@import 'component/whatwedo.scss';
 @import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@700&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .container{
@@ -16,8 +21,8 @@
 }
 html{
     font-size: 62.5%;
-    font-family: 'Quicksand', sans-serif;
-    // font-family: 'Roboto', sans-serif;
+    // font-family: 'Quicksand', sans-serif;
+     font-family: 'Roboto', sans-serif;
 }
 body{
     font-size: 1.6rem;
