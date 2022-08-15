@@ -1,32 +1,58 @@
+
+.bg-overlay{
+    opacity: 0.5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;  
+}
+
 .ourmission{
-    background-position: top center;
-    background-size: cover;
+    position: relative;
+    height: 100vh;
+    background-position: center;
+    background-size: 100vw;
     background-repeat: no-repeat;
-    border: 2px solid black;
-    height: 30rem;
-    padding-top: 50%;
-    position: relative;  
+    background-attachment: fixed;
+   
+}
+.container{
+    position: absolute;
+    // border: 1px solid red;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    color: #fff;
+    display: flex;
 }
 
 .ourmission-text-content{
     position: absolute;
-    font-weight: 400;
+    // font-weight: 400;
     line-height: 1.6;
     padding: 0 20rem;
     width: 100%;
     text-align: left;
     bottom: 50%;
     color: #fff;
-    font-size: 3rem;
+    font-size: 1.6rem;
+    // display: block;
+    display: flex;
+    flex-direction: column;
 }
 
-.ourmission-heading{
+.ourmission-heading h2{
     margin-bottom: 1rem !important;
-
+    // line-height: 1.35;
+    font-weight: 400;
 }
 
-.ourmission-description{
-
+.ourmission-description p{
+    font-weight: 400;
 }
 
 
