@@ -1,0 +1,144 @@
+.background-img{
+    position: relative;
+    height: 850px;
+    &::after{
+        content: "";
+        display: block;
+        background-color: rgba(0, 0, 0, 0.471);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+.container_OW-2{
+    display: none;
+}
+.container_OW-3{
+    display: none;
+}
+.container_OW{
+    margin: 0 auto;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    max-width: 1320px;
+    padding-top: 5%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    font-size: 95%;
+    font-family: 'Montserrat', sans-serif;
+}
+.H1{
+    padding-bottom: 2rem;
+    color: white;
+}
+.pCard{
+    width: 45%;
+    padding-bottom: 3rem;
+    color: white;
+}
+.slide{
+    display: flex;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+}
+.textSlide{
+    width: 45%;
+    padding: 9rem 2rem 0 2rem;
+    color: white;
+    height: 100%;
+}
+.textLeft{
+    text-align: right;
+    padding-right: 2rem;
+}
+.imgSlide{
+    text-align: center;
+    width: 55%;
+    height: 473px;
+}
+.imgSlide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 1.5rem 0 1.5rem;
+}
+@media(max-width: 1200px){
+    .container_OW{
+        max-width: 1160px;
+    }
+    .pCard{
+        display: block;
+        width: 60%;    
+    }
+}
+@media(max-width: 995px){
+    .container_OW{
+        max-width: 960px;
+    }
+    .background-img{
+        height: 2100px;
+    }
+    .container_OW-1{
+        display: none;
+    }
+    .container_OW-2{
+        display: block;
+    }
+    .pCard{
+        width: 95%;
+    }
+    .slide{
+        margin: 0 0 4rem 0;
+        max-height: 340px;
+    }
+    .imgSlide{
+        height: 335px;
+    }
+}
+@media(max-width: 768px){
+    .container_OW{
+        max-width: 720px;
+    }
+
+}
+@media(max-width: 680px){
+    .container_OW{
+        max-width: 660px;
+    }
+    .background-img{
+        height: 2900px;
+    }
+    .container_OW-2{
+        display: none;
+    }
+    .container_OW-3{
+        display: block;
+    }
+    .H1{
+        padding-left: 1.5rem;
+    }
+    .pCard{
+        padding-left: 1.5rem;
+    }
+    .textSlide{
+        padding: 0 0 3rem 15px;
+    }
+    .imgSlide{
+        width: 100%;
+        height: 420px;
+    }
+
+}
+@media(max-width: 576px){
+    .container_OW{
+        max-width: 540px;
+    }
+}
