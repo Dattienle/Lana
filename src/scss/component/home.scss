@@ -1,0 +1,189 @@
+.home-container{
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .home-bg{
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .header-container{
+        // border: 2px solid blue;
+        max-width: 1560px;
+        margin: 0 auto;
+        height: 7rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 7rem;
+        z-index: 999;
+        transition: 0.3s;
+        .container-h{
+            // border: 2px solid blue;
+            display: flex;
+            justify-content: space-between;
+            height: 7rem;
+            align-items: center;
+            margin: 0 auto;
+        
+            .header-logo a{
+                font-size: 3rem;
+                font-weight: 700;
+                margin: 3rem;
+                text-decoration: none;
+                color: #fefefe;
+                letter-spacing: 2px;
+            }
+            .header-menu{
+                display: flex;
+                align-items: center;
+                .menu-list{
+                    display: flex;
+                    list-style-type: none;
+                    align-items: center;
+
+                    .menu-list-link a{
+                        padding: 0 1rem;
+                        text-decoration: none;
+                        color: #fefefe;
+                        font-size: 1.6rem;
+                        transition: 0.3s;  
+                        
+                        &:hover{
+                            color:aliceblue;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+                .btn-buy{
+                    background-color:royalblue;
+                    margin: 3rem;
+                    padding: 1.5rem 2rem;
+                    border: none;
+                    color: white;
+                    border-radius: 5px;
+                    font-size: 1.6rem;
+                    transition: 0.3s;
+
+                    &:hover{
+                        background-color:blue;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+    .body-container{
+        // border: 2px solid red;
+        max-width: 1560px;
+        margin: 0 auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60rem;
+
+        .container-b{
+            // border: 2px solid blue;
+            position: absolute;
+            left: 15%;
+            top: 30%;
+
+            .count-container{
+                // border: 2px solid violet;
+                color: #fefefe;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:left;
+                position: relative;
+
+                .counttime-day{
+                    // border: 2px solid violet;
+                    width: 5rem;
+                    margin: 0.5rem;
+                    padding: 0.3rem;
+
+                    .numb p{
+                        // border: 2px solid #eeeeee;
+                        height: 8rem;
+                        font-size: 6rem;
+                        font-weight: 500;
+                        padding: 0.5rem 0;
+                    }   
+                    .date{
+                        // border: 2px solid #eeeeee;
+                        padding: 0.5rem 0;
+                    }    
+                    .date p{
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                    }
+                }
+                .counttime {
+                    // border: 2px solid violet;
+                    width: 8rem;
+                    margin: 0.5rem;
+                    padding: 0.3rem;
+
+                    .numb p{
+                        // border: 2px solid #eeeeee;
+                        height: 8rem;
+                        font-size: 6rem;
+                        font-weight: 500;
+                        padding: 0.5rem 0;
+                    }   
+                    .date{
+                        // border: 2px solid #eeeeee;
+                        padding: 0.5rem 0;
+                    }    
+                    .date p{
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .text-container p{
+                color: #fefefe;
+                font-size: 2.5rem;
+                font-weight: 300;
+            }
+            .btn-container{
+                // border: 2px solid #eeeeee;
+                position: relative;
+                right: 9%;
+
+                .btn-learn{
+                    background-color:white;
+                    margin: 3rem;
+                    padding: 1.5rem 2rem;
+                    border: none;
+                    color: black;
+                    border-radius: 5px;
+                    font-size: 1.6rem;
+                    transition: 0.3s;
+
+                    &:hover{
+                        background-color:rgb(226, 226, 226);
+                        transition: 0.3s;
+                    }
+                }
+                .btn-subcribe{
+                    background-color:rgba(169, 169, 169, 0.449);
+                    margin: 3rem;
+                    padding: 1.5rem 2rem;
+                    border: none;
+                    color: white;
+                    border-radius: 5px;
+                    font-size: 1.6rem;
+                    transition: 0.3s;
+
+                    &:hover{
+                        background-color:rgba(186, 185, 185, 0.479);
+                        transition: 0.3s;
+                    }
+                }                    
+            } 
+        }
+    }
+}
