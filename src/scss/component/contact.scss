@@ -1,0 +1,214 @@
+.contact {
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    background-size: cover!important;
+    background-attachment: fixed!important;
+    height: 100vh;
+    color: white;
+    // display: block;
+    position: relative;
+    overflow: hidden;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        opacity: 0.5;
+    }
+    .container-contact {
+        position: absolute;
+        z-index: 999;
+        // left: 50%;
+        // transform: translateX(50%);
+        top: 25%;
+        // transform: translateX(-50%);
+        left: 0;
+        right: 0;
+        display: block;
+    }
+    .contact-header {
+        display: flex;
+        width: 50%;
+        font-size: 2rem;
+        padding: 2rem;
+        font-weight: 350;
+    }
+    .contact-content h2 {
+        padding-bottom: 1.5rem;
+        font-weight: 400;
+    }
+    .contact-infor {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        align-content: flex-start;
+        padding-right: 2rem;
+    }
+    .contact-body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // align-items: center;
+        padding: 2rem;
+        font-weight: 350;
+        i,
+        p {
+            color: white;
+        }
+        i {
+            font-size: 2.5rem;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        a:visited {
+            color: white;
+        }
+    }
+    .contact-form {
+        width: 50%;
+    }
+    .enter-name {
+        width: calc(50% - 0.8rem);
+        padding: 0.9rem 1.8rem;
+        outline: none;
+        border-radius: 0.3125rem;
+        border: 1px solid transparent;
+        margin: 0 0.8rem 1.6rem 0;
+    }
+    .enter-email {
+        width: calc(50% - 0.8rem);
+        padding: 0.9rem 1.8rem;
+        outline: none;
+        border-radius: 0.3125rem;
+        border: 1px solid transparent;
+        margin: 0 0 1.6rem 0.8rem;
+    }
+    .enter-subject__text {
+        width: 100%;
+        padding: 0.9rem 1.8rem;
+        outline: none;
+        border-radius: 0.3125rem;
+        border: 1px solid transparent;
+        margin-bottom: 1.6rem;
+    }
+    .enter-message__text {
+        outline: none;
+        padding: 0.9rem 1.8rem;
+        width: 100%;
+        border-radius: 0.3125rem;
+        border: 1px solid transparent;
+    }
+    .button-sendmess__text {
+        padding: 0.9rem 1.8rem;
+        background-color: white;
+        outline: none;
+        opacity: 100%;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.1);
+        border-color: transparent;
+        cursor: pointer;
+        border-radius: 0.3125rem;
+        margin: 1.6rem 0 0 0;
+    }
+    .button-sendmess__text:hover {
+        box-shadow: 0px 0px 4px 0px #e7e7e7;
+        transform: 0.5s;
+    }
+    .contact-local {
+        flex: 1;
+    }
+    .contact-tele {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+    .contact-local {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+    .contact-email {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+}
+
+.footer {
+    background-color: black;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    .social {
+        li {
+            list-style: none;
+            padding: 1.5rem;
+            font-size: 2rem;
+        }
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: white;
+    }
+    p {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: white;
+        margin: 1rem;
+        flex-wrap: wrap;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 789px) {
+    .contact {
+        .container-contact {
+            top: 10%;
+        }
+        .contact-body {
+            display: block;
+            margin: 0 auto;
+            .contact-infor {
+                width: 100%;
+                display: block;
+            }
+            .contact-form {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:1025px) {
+    .contact {
+        .container-contact {
+            .contact-header {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .contact {
+        .container-contact {
+            top: 5%;
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .footer {
+        display: flex !important;
+    }
+}
