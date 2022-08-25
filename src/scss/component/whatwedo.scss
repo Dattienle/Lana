@@ -1,0 +1,109 @@
+.whatwedo{
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    background-size: cover!important;
+    background-attachment: fixed!important;
+    .bg-overlay{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;   
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .container{
+        // border: 1px solid red;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        color: white;
+        display: flex;
+        transform: translateY(-50%);
+    }
+    .whatwedo-content{
+        display: flex;
+    }
+    .left{
+        width: 40%;
+        align-content: flex-start;
+        background-position: 100%;
+    }
+    .left h2{
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+    }
+    .left p{
+        line-height: 1.5;
+    }
+    .right{ 
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        padding-left: 6rem;
+    }
+    .right-block{
+        width: 50%;
+        margin-bottom: 4.8rem!important;
+        padding: 0rem 1.5rem;
+    }
+    .right-block h3{
+        font-size: 2rem;
+        font-family: "Montserrat",Helvetica,sans-serif;
+        font-weight: 400;
+        display: block;
+        padding: 2rem 0;
+        line-height: 2rem;
+    }
+    .icon{
+        font-size: 6rem;
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+}
+@media (max-width: 1199px) {
+    .whatwedo{
+        .whatwedo-content{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container{
+            left: 8rem;
+            right: 8rem;
+        }
+        .left{
+            display: block;
+            width: 100%;
+        }
+        .left p{
+            padding-bottom: 4rem;
+        }
+        .right{
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0;
+        }
+        .right-block{
+            padding: 0;
+        }
+    }
+}
+@media (max-width: 575px){
+    .whatwedo{
+        height: 200rem;
+        .container{
+            left: 2rem;
+            right: 2rem;
+        }
+        .right-block{
+        display: block;
+        width: 100%;
+        // padding: 0 2rem;
+        }
+    }
+}
